@@ -1,0 +1,8 @@
+# Silly Macs
+.DS_Store
+
+content/uploads
+content/plugins/debug-bar
+content/plugins/user-switching
+wp-cli.local.yml
+wp-config-env.php
