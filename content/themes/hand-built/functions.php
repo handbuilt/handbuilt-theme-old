@@ -10,10 +10,21 @@ class Hand_Built {
 
 		if ( ! isset( self::$instance ) ) {
 			self::$instance = new Hand_Built;
+			self::$instance->setup_actions();
 		}
 
 		return self::$instance;
 	}
+
+	private function setup_actions() {
+
+		add_action( 'init', function() {
+			if ( ! is_admin() ) {
+				show_admin_bar( false );
+			}
+		});
+
+	} 
 
 
 }
