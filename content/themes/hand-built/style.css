@@ -171,6 +171,23 @@ section.home-panel .service {
 section#lead {
 	background-color: #A8551B;
 	height: 17rem;
+	position: relative;
+	display: block;
+}
+
+section#lead::after {
+	content: "";
+	background-image: url(img/header-original.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 1;   
 }
 
 section#lead #description {
@@ -180,6 +197,7 @@ section#lead #description {
 	letter-spacing: 0.03rem;
 	padding-top: 5rem;
 	font-weight: 300;
+	z-index: 2;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -195,6 +213,10 @@ section#lead #description {
 		padding-top: 4rem;
 	}
 
+	section#lead::after {
+		background-image: none;
+	}
+
 }
 
 @media only screen and (max-width: 40em) {
@@ -208,6 +230,10 @@ section#lead #description {
 		line-height: 1.8rem;
 		letter-spacing: 0.01rem;
 		padding-top: 3rem;
+	}
+
+	section#lead::after {
+		background-image: none;
 	}
 
 }
