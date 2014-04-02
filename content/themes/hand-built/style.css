@@ -134,3 +134,15 @@ section#lead #description {
 	}
 
 }
+
+section#my-work h4 {
+	margin-top: 1.1rem;
+	margin-bottom: 1.1rem;
+}
+
+section#my-work h4 a {
+	color: #A8551B;
+	font-weight: 300;
+	font-size: 1.6rem;
+	letter-spacing: 0.03rem;
+}
