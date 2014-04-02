@@ -44,11 +44,30 @@ footer#site-footer div.tagline {
 	letter-spacing: 1px;
 }
 
+footer#site-footer div.tagline {
+	padding-top: 3rem;
+}
+
+footer#site-footer div.tagline.copy {
+	font-size: 0.6rem;
+	padding-bottom: 2rem;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 	header#site-header div.tagline,
 	footer#site-footer div.tagline {
 		font-size: 0.65rem;
+	}
+
+}
+
+
+@media only screen and (max-width: 40em) {
+
+	footer#site-footer div.tagline {
+		padding-top: 1rem;
+		line-height: 1.5rem;
 	}
 
 }
