@@ -33,7 +33,7 @@ class Hand_Built {
 		wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/lib/foundation/foundation.min.js', array( 'jquery' ) );
 		wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/lib/foundation/foundation.min.css' );
 
-		wp_enqueue_style( 'google-roboto-slab', '//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' );
+		wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Open+Sans:400italic,600italic,300,400,600' );
 		wp_enqueue_style( 'hand-built', get_stylesheet_uri() );
 
 	}

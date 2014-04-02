@@ -13,15 +13,14 @@ body, html {
 }
 
 body {
+	font-family: "Open Sans", "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	background-color: #FAFBFC;
-}
-
-.no-border {
-	border: none;
 }
 
 header#site-header {
 	background-color: #FFF;
+	padding-top: 1.8rem;
+	padding-bottom: 1.8rem;
 }
 
 header#site-header h1 {
@@ -36,12 +35,13 @@ header#site-header h1 a {
 	color: #36516C;
 }
 
-header#site-header span,
-footer#site-footer span {
+header#site-header div.tagline,
+footer#site-footer div.tagline {
 	text-transform: uppercase;
 	color: #C0D5DC;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	line-height: 3rem;
+	letter-spacing: 1px;
 }
 
 section.container {
@@ -51,34 +51,86 @@ section.container {
 /**
  * Homepage
  */
-section.panel {
+section.home-panel {
 	background-color: #FFF;
 	margin-top: 5rem;
 }
 
-section.panel .row {
+section.home-panel .row.with-border {
 	border-top: 2px solid #EEF4F6;
 }
 
-section.panel h1 {
+section.home-panel h1 {
 	color: #96BAC6;
 	text-transform: uppercase;
 	font-family: 'Roboto Slab', serif;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	font-weight: 300;
 	letter-spacing: 1px;
-	margin-top: -1.3rem;
-	width: 25rem;
+	margin-top: -1.2rem;
+	margin-bottom: 2rem;
+	width: 18rem;
 	background-color: #FFF;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
+section.home-panel h3 {
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: #36516C;
+	font-weight: 600;
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+}
+
+section.home-panel .service {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 section#lead {
 	background-color: #A8551B;
+	height: 17rem;
 }
 
 section#lead #description {
 	color: #FFF;
+	font-size: 1.7rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.03rem;
+	padding-top: 5rem;
+	font-weight: 300;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+	section#lead {
+		height: 14rem;
+	}
+
+	section#lead #description {
+		font-size: 1.5rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.02rem;
+		padding-top: 4rem;
+	}
+
+}
+
+@media only screen and (max-width: 40em) {
+
+	section#lead {
+		height: 13rem;
+	}
+
+	section#lead #description {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		letter-spacing: 0.01rem;
+		padding-top: 3rem;
+	}
+
 }
