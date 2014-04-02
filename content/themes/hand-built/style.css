@@ -6,3 +6,79 @@ Author:         Daniel Bachhuber
 Author URI:     http://handbuilt.co
 Version:        0.1.0
 */
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FAFBFC;
+}
+
+.no-border {
+	border: none;
+}
+
+header#site-header {
+	background-color: #FFF;
+}
+
+header#site-header h1 {
+	font-style: italic;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+}
+
+header#site-header h1 a {
+	color: #36516C;
+}
+
+header#site-header span,
+footer#site-footer span {
+	text-transform: uppercase;
+	color: #C0D5DC;
+	font-size: 0.9rem;
+	line-height: 3rem;
+}
+
+section.container {
+	background-color: #FFF;
+}
+
+/**
+ * Homepage
+ */
+section.panel {
+	background-color: #FFF;
+	margin-top: 5rem;
+}
+
+section.panel .row {
+	border-top: 2px solid #EEF4F6;
+}
+
+section.panel h1 {
+	color: #96BAC6;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: -1.3rem;
+	width: 25rem;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+section#lead {
+	background-color: #A8551B;
+}
+
+section#lead #description {
+	color: #FFF;
+}

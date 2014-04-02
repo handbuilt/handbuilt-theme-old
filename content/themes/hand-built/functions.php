@@ -24,7 +24,19 @@ class Hand_Built {
 			}
 		});
 
-	} 
+		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts' ) );
+
+	}
+
+	public function action_wp_enqueue_scripts() {
+
+		wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/lib/foundation/foundation.min.js', array( 'jquery' ) );
+		wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/lib/foundation/foundation.min.css' );
+
+		wp_enqueue_style( 'google-roboto-slab', '//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' );
+		wp_enqueue_style( 'hand-built', get_stylesheet_uri() );
+
+	}
 
 
 }
