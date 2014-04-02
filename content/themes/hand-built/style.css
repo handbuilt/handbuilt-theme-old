@@ -238,6 +238,10 @@ section#lead #description {
 
 }
 
+section#services p {
+	color: #A8551B;
+}
+
 section#my-work h4 {
 	margin-top: 1.1rem;
 	margin-bottom: 1.1rem;
