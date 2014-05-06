@@ -24,6 +24,14 @@ class Hand_Built {
 			}
 		});
 
+		add_action( 'template_redirect', function() {
+			if ( ! is_home() ) {
+				wp_safe_redirect( home_url() );
+				exit;
+			}
+
+		});
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts' ) );
 
 		add_action( 'wp_footer', array( $this, 'action_wp_footer' ) );
