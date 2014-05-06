@@ -133,6 +133,14 @@ section.home-panel {
 	margin-top: 5rem;
 }
 
+section.home-panel#announcement-link {
+	margin-top: 3rem;
+}
+
+section.home-panel#services {
+	margin-top: 3rem;
+}
+
 section.home-panel .row.with-border {
 	border-top: 2px solid #EEF4F6;
 }
@@ -244,6 +252,13 @@ section#lead #description {
 		background-image: none;
 	}
 
+}
+
+section#announcement-link a.read-announcement {
+	background-color: #36516C;
+	font-weight: 300;
+	letter-spacing: 0.02rem;
+	line-height: 1.5rem;
 }
 
 section#services p {
