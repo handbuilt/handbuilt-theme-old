@@ -10,10 +10,17 @@ class Hand_Built {
 
 		if ( ! isset( self::$instance ) ) {
 			self::$instance = new Hand_Built;
+			self::$instance->require_files();
 			self::$instance->setup_actions();
+			self::$instance->setup_filters();
 		}
 
 		return self::$instance;
+	}
+
+	private function require_files() {
+		require_once dirname( __FILE__ ) . '/lib/cache-busting-magic.php';
+		require_once dirname( __FILE__ ) . '/lib/timber/timber.php';
 	}
 
 	private function setup_actions() {
@@ -36,6 +43,16 @@ class Hand_Built {
 
 		add_action( 'wp_footer', array( $this, 'action_wp_footer' ) );
 
+	}
+
+	private function setup_filters() {
+		add_filter( 'pre_option_blogname', function() {
+			return 'Hand Built';
+		});
+
+		add_filter( 'pre_option_blogdescription', function(){
+			return 'Custom WordPress development, code review, data migrations, and consulting services from Daniel Bachhuber.';
+		});
 	}
 
 	public function action_wp_enqueue_scripts() {
