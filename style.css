@@ -216,6 +216,11 @@ section#lead #description {
 	z-index: 2;
 }
 
+section#lead #description a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 	section#lead {
